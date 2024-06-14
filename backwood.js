@@ -8444,6 +8444,7 @@ System.register(
                 );
               }),
               (n.createEnemy = function (t, e, r, n) {
+                console.log("createEnemy");
                 var s = l.POOL.spawn();
                 return (
                   (s.type = d.Enemy),
@@ -8629,6 +8630,7 @@ System.register(
                 e.splice(0, e.length);
               }),
               (n.dieEnemyAll = function () {
+                console.log("dieEnemyAll");
                 for (var t = this.creatures[d.Enemy], e = 0; e < t.length; ++e)
                   w.playDie(t[e].position), t[e].destroy();
                 t.splice(0, t.length);
